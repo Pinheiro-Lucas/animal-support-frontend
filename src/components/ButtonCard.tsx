@@ -5,16 +5,18 @@ import { Link } from "react-router-dom";
 function ButtonCard({title, desc, url_for}: {title:string, desc:string, url_for:string}) {
     return (
         <Link to={url_for}>
-            <div className="h-40 w-auto bg-card drop-shadow-card hover:drop-shadow-card-selected p-5 rounded-md mb-10">
-                <h1 className="text-primary-light font-bold text-3xl pb-5">
+            <div className="h-40 w-auto bg-card drop-shadow-card hover:drop-shadow-card-selected p-5 rounded-md mb-10 flex flex-col">
+                <h1 className="text-primary-light font-bold text-3xl flex-auto">
                     {title}
                 </h1>
-                <p className="text-gray-800 text-base">
-                    {desc}
-                </p>
-                <p className="absolute bottom-4 right-5 text-primary-light text-2xl" >
-                    <FiArrowRight/>
-                </p>
+                <div className='flex'>
+                    <span className="text-gray-800 text-base flex-auto">
+                        {desc}
+                    </span>
+                    <span className="text-primary-light text-2xl" >
+                        <FiArrowRight/>
+                    </span>
+                </div>
             </div>
         </Link>
     )
