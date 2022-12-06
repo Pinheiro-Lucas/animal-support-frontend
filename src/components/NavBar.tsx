@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
     return (
-        <div className="absolute inset-x-0 bottom-0 h-16 bg-white drop-shadow-navbar m-5 rounded-3xl flex items-center text-2xl text-primary">
-            <Link to='' className='flex-auto flex'>
+        <div className="absolute inset-x-0 bottom-3 h-16 bg-white drop-shadow-navbar m-5 rounded-3xl flex items-center text-2xl text-primary">
+            <Link to='/' className='flex-auto flex'>
                 <AiFillHome className='flex-auto'/>
             </Link>
             <Link to='' className='flex-auto flex'>
@@ -16,7 +16,7 @@ function NavBar() {
             <Link to='' className='flex-auto flex'>
                 <AiFillAppstore className='flex-auto'/>
             </Link>
-            <Link to='' className='flex-auto flex'>
+            <Link to='https://github.com/Pinheiro-Lucas/animal-support-project' className='flex-auto flex'>
                 <AiFillGithub className='flex-auto'/>
             </Link>
         </div>
